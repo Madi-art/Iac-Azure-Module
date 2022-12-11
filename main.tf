@@ -3,16 +3,16 @@
  
  Plus d'infos sur ce lien<https://www.terraform.io/docs/providers/azurerm/r/resource_group.html>
 
-
+*/
 #Create the Resouce Group
 resource "azurerm_resource_group" "resouce_group" {
   name     = var.resource_group_name
   location = var.location
   tags     = var.tags
 }
-*/
 
-/*-----------------Création de la ressource de --------------
+
+/*-----------------Création de la ressource vnet --------------
  Cette ressource va servir à la création d'un réseau virtuel comprenant tous les sous-réseaux configurés. 
  Chaque sous-réseau peut éventuellement être configuré avec un groupe de sécurité à associer au sous-réseau.
  

@@ -1,20 +1,19 @@
-# Module Terraform : Création automatique d'un client Windows
+# Module Terraform : Création automatique d'un client Windows sur Azure
 
-Ce module Terraform permet la création automatique d'un client Windows dans votre infrastructure cloud. Il peut être utilisé pour provisionner rapidement et facilement des clients Windows dans des environnements cloud tels que AWS, Azure, Google Cloud, etc.
-Utilisation
+Ce module Terraform permet la création automatique d'un client Windows dans votre infrastructure cloud. Il peut être utilisé pour provisionner rapidement et facilement des clients Windows dans  Azure.
+
 Prérequis
 
 Avant d'utiliser ce module, assurez-vous d'avoir les éléments suivants :
 
     Terraform installé localement. Vous pouvez trouver des instructions d'installation sur le site officiel de Terraform.
-    Un compte dans le fournisseur cloud de votre choix (AWS, Azure, etc.).
+    Un compte dans le fournisseur cloud Azure.
     Les informations d'identification nécessaires pour vous connecter à votre compte cloud via Terraform.
 
 Exemple d'utilisation
 
 Voici un exemple d'utilisation de ce module dans un fichier Terraform :
 
-hcl
 
 module "client_windows" {
   source = "github.com/votre-utilisateur/module-client-windows"
